@@ -25,6 +25,7 @@ if response.status_code == 200:
 else:
     print('Failed to retrieve the webpage')
 ```
+![image](basic.png)
 ## bs4的應用 (撈取PTT)
 學會基本的**Request**資料撈取接下來我們開始應用**beautiful soup**來存取以及清洗想要的資料，這邊的話根據網路上相關的範例，製作PPT撈取的程式。
 ```python
@@ -61,7 +62,7 @@ else:
     print('Failed to retrieve the webpage')
 ```
 在這個部分我們加入了**beautiful soup**來找自己想要的部分，如：標題、超連結、段落內文等，一開始一樣去判斷是否正常，正常後透過**soup**的功能去找尋網頁的相關部分並列印出來。
-
+![image](bs4.png)
 ## 爬取其他PPT頁面的文章
 接下來是延伸的部分，可以去利用迴圈的方式撈取其他頁面的資料，並將資料分別存取於不同的變數中。這邊主要將上面所學的部分建立成**Function**，在最後的時候用迴圈的方式爬取以及選取資料。
 ```python
@@ -113,6 +114,7 @@ if __name__ == '__main__':
 ```
 透過上述的**function**我們能夠去爬取想要的頁數，只要更改**range**的部分就可以了，透過!=的方式去判斷爬取的狀況是否正常，最後印出爬取的部分就完工羅~
 
+![image](bs4_2.png)
 # 參考文章
 * [Python手把手爬取 PPT 八卦版最新話題！](https://medium.com/marketingdatascience/python%E6%89%8B%E6%8A%8A%E6%89%8B%E7%88%AC%E5%8F%96-ppt-%E5%85%AB%E5%8D%A6%E7%89%88%E6%9C%80%E6%96%B0%E8%A9%B1%E9%A1%8C-%E5%90%AB%E7%A8%8B%E5%BC%8F%E7%A2%BC-6f46c2d3f746)
 * [Python手把手爬取 PPT 八卦版最新話題！Youtube影片](https://www.youtube.com/watch?v=yeY1LFHdZs4&ab_channel=zinolin)
